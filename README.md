@@ -30,5 +30,9 @@ After setting up your database, apply the migrations so you get all the neccessa
 ```
 php artisan migrate
 ```
+Finally, to start your local server run:
+```
+php artisan serve
+```
 
 The application is set up. To test the functionalities, create a couple of users and send invites to any of them.
