@@ -28,7 +28,7 @@ class HomeController extends Controller
         $user = auth()->user();
         $invites = Invites::where('email', '=', $user->email)->get();
         $friendlist = FriendList::where('user_id', $user->id)->get();
-
+        
         return view('home', [
             'invites' => $invites,
             'friendlist' => $friendlist

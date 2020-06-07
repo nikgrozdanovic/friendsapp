@@ -11,8 +11,8 @@ class FriendList extends Model
         'friends_id'
     ];
 
-    protected function friend()
+    public function friend()
     {
-        return $this->hasOne('App\User', 'id', 'friends_id');
+        return $this->belongsTo('App\User', 'friends_id', 'id');
     }
 }
