@@ -14,6 +14,10 @@ After doing that, get your .env file set. Run from the terminal the following co
 ```
 mv .env.example .env
 ```
+To set you app key, run:
+```
+php artisan key:generate
+```
 
 Run your XAMPP (or anything else that you use for a db host) and create database called friendsapp.
 In your .env file adapt the following lines:
